@@ -3,7 +3,6 @@ const pool = require('../database/database')
 const reg = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
 
 
-
 const getAllTasks = async () => {
     try {
         return await pool.query('SELECT * FROM taskitem');
